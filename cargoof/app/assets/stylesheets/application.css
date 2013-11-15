@@ -126,6 +126,95 @@ header#head .head-outer {
 	margin: 0 auto; 
 }
 
+header#head .settings-bar {
+  	max-width: 980px;
+	margin: 0.25em auto 0 auto; 
+
+}
+
+.settings-bar table tr td#browse-cats {
+	min-width: 200px;
+	max-width: 200px;
+}
+
+.settings-bar table tr td#search {
+	min-width: 530px;
+	max-width: 530px;
+}
+
+.settings-bar table tr td#location {
+	min-width: 250px;
+	max-width: 250px;
+}
+
+.settings-bar ul#categories {
+	display: none;
+	padding: 0;
+	/*width: 145px;*/
+	list-style-type: none;
+	z-index: 100;
+}
+
+.settings-bar table tr td#browse-cats a {
+	display: block;
+    font-size: 12px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-decoration: none;
+	padding: 25px 15px 5px 15px; 
+}
+
+.settings-bar table tr td#browse-cats:hover a:hover {
+	background: #f0f0f0;
+}
+
+.settings-bar table tr td#browse-cats ul#categories li a {
+	display: block;
+    font-size: 12px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.settings-bar table tr td#browse-cats:hover ul {
+	display: block;
+	position: absolute;
+}
+
+.settings-bar table tr td#browse-cats:hover li {
+	float: none;
+	font-size: 8px;
+}
+
+.settings-bar table tr td#browse-cats:hover li {
+	float: none;
+	font-size: 8px;
+}
+
+.settings-bar table tr td#browse-cats:hover a {
+	/*background: #f0f0f0;*/
+}
+
+.settings-bar table tr td#browse-cats:hover li a {
+	background: white;
+}
+
+.settings-bar table tr td#browse-cats:hover li a:hover {
+	background: #f0f0f0;
+}
+
+.settings-bar table tr td#browse-cats ul li {
+	width: 100%;
+}
+
+.settings-bar table tr td#browse-cats ul li a {
+	padding: 12px 15px 5px 15px; 
+}
+
 hgroup#logohead {
 	height: 48px;
 	float: left;
@@ -170,6 +259,8 @@ nav#access {
 	text-align: left;
 	position:relative;
     left:-50%;
+    min-width: 980px;
+	max-width: 980px;
 }
 
 ul#menu-primary-nav {
@@ -209,7 +300,7 @@ ul#menu-primary-nav li a {
 	/* font-weight: 600; */
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 32px 15px 5px 15px; 
+	padding: 25px 15px 5px 15px; 
 	letter-spacing: 1px;
 }
 
@@ -251,7 +342,11 @@ ul#menu-primary-nav li:hover li {
 }
 
 ul#menu-primary-nav li:hover a {
-	/*background: #f0f0f0;*/
+	/*background: white;*/
+}
+
+ul#menu-primary-nav li:hover li a {
+	background: white;
 }
 
 ul#menu-primary-nav li:hover li a:hover {

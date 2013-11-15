@@ -15,10 +15,39 @@
         				</h1>
         			</hgroup>
         			<hgroup id="optionshead">
-        				<a href="#" title="SignIn" rel="home">Sign In</a>
-        				<a href="#" title="Register" rel="home">Register</a>
+        				<a href="#" title="SignIn" rel="home">Sign In / Register</a>
         				<a href="#" title="Help" rel="home">Help</a>
+        				<br />
+        				<a href="#" title="PostFreeAd" rel="home">Post Free Ad</a>
+        				<a href="#" title="MyPage" rel="home">My Page</a>
     				</hgroup>
+				</div>
+				<div class="settings-bar">
+					<table>
+						<tr>
+							<td id="browse-cats">
+    							<a href="#" style=>Browse Categories</a>
+								<ul id="categories">
+						            <li><a href="#">Vehicle Repair</a></li>
+						            <li><a href="#">Vehicle Sales</a></li>
+						            <li><a href="#">Parts</a></li>
+						            <li><a href="#">Tow Truck</a></li>
+						            <li><a href="#">Specialty</a></li>
+						            <li><a href="#">Rentals</a></li>
+						            <li><a href="#">Insurance</a></li>
+						            <li><a href="#">Finance</a></li>
+						            <li><a href="#">Advice / Tips</a></li>
+						        </ul>	
+							</td>
+							<td id="search">
+								<%= form_tag() do %>
+						        <%= text_field_tag :isbn, nil, placeholder: 'Search For Something...', size: 65 %>
+						        <%= submit_tag("Search") %>
+	    						<% end %>
+	    					</td>
+							<td id="location">My Location</td>
+						</tr>
+					</table>
 				</div>
 				<div class ="head-outer">
         			<nav id="access" role="navigation">
