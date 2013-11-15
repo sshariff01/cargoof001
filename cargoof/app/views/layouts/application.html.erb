@@ -7,8 +7,125 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="head" role="banner">
+        		<div class="head-inner">
+        			<hgroup id="logohead">
+        				<h1 id="site-title">
+        					<a href="#" title="Cargoof" rel="home">Cargoof Logo</a>
+        				</h1>
+        			</hgroup>
+        			<hgroup id="optionshead">
+        				<a href="#" title="SignIn" rel="home">Sign In</a>
+        				<a href="#" title="Register" rel="home">Register</a>
+        				<a href="#" title="Help" rel="home">Help</a>
+    				</hgroup>
+				</div>
+				<div class ="head-outer">
+        			<nav id="access" role="navigation">
+        				<div class="primary-nav-menu-container">
+        					<ul id="menu-primary-nav">
+        						<li id="menu-item">
+        							<a href="#" style=>Vehicle Repair</a>
+        							<ul id="vehicle-repair">
+							            <li><a href="#">Car / SUV / Van</a></li>
+							            <li><a href="#">Truck</a></li>
+							            <li><a href="#">Motorcycle</a></li>
+							            <li><a href="#">RV / Trailer</a></li>
+							            <li><a href="#">Boat / Watercraft</a></li>
+							            <li><a href="#">Snowmobile</a></li>
+							            <li><a href="#">ATV</a></li>
+							            <li><a href="#">Other</a></li>
+							        </ul>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Vehicle Sales</a>
+        							<ul id="vehicle-sales">
+							            <li><a href="#">Car / SUV / Van</a></li>
+							            <li><a href="#">Truck</a></li>
+							            <li><a href="#">Motorcycle</a></li>
+							            <li><a href="#">Classic Cars</a></li>
+							            <li><a href="#">RV / Trailer</a></li>
+							            <li><a href="#">Boat / Watercraft</a></li>
+							            <li><a href="#">Snowmobile</a></li>
+							            <li><a href="#">ATV</a></li>
+							            <li><a href="#">Other</a></li>
+							        </ul>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Parts</a>
+        							
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Tow Truck</a>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Specialty</a>
+        							<ul id="specialty">
+							            <li><a href="#">Fluid Change</a></li>
+							            <li><a href="#">Tire Service</a></li>
+							            <li><a href="#">Body Shops</a></li>
+							            <li><a href="#">Windshield Repair / Replacement</a></li>
+							            <li><a href="#">Tinting</a></li>
+							            <li><a href="#">Detailing</a></li>
+							            <li><a href="#">Car Wash</a></li>
+							            <li><a href="#">Audio / Video Installation</a></li>
+							            <li><a href="#">Key Make / Repair</a></li>
+							            <li><a href="#">Restoration</a></li>
+							            <li><a href="#">Junk Yard</a></li>
+							            <li><a href="#">Scrap Removal</a></li>
+							            <li><a href="#">Traffic Tickets</a></li>
+							            <li><a href="#">Driving School</a></li>
+							            <li><a href="#">Delivery</a></li>
+							            <li><a href="#">Other</a></li>
+							        </ul>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Rentals</a>
+        							<ul id="specialty">
+							            <li><a href="#">Car / SUV / Van / Truck</a></li>
+							            <li><a href="#">Limo</a></li>
+							            <li><a href="#">Taxi</a></li>
+							            <li><a href="#">Bus</a></li>
+							            <li><a href="#">Luxury Vehicles</a></li>
+							            <li><a href="#">Exotic</a></li>
+							            <li><a href="#">Other</a></li>
+							        </ul>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Insurance</a>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Finance</a>
+        						</li>
+        						<li id="menu-item">
+        							<a href="#">Advice / Tips</a>
+        							<ul id="advice">
+							            <li><a href="#">Diagnose / Find Problem</a></li>
+							            <li><a href="#">Estimate Cost</a></li>
+							            <li><a href="#">How-To-Guides</a></li>
+							            <li><a href="#">Auto Answers</a></li>
+							            <li><a href="#">News</a></li>
+							            <li><a href="#">Reviews</a></li>
+							            <li><a href="#">Forums</a></li>
+							            <li><a href="#">Other</a></li>
+							        </ul>
+        						</li>
+        					</ul>
+        				</div>
+        			</nav>
+    			</div>
+        	</header>
 
 <%= yield %>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 
 </body>
 </html>

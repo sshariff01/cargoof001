@@ -11,3 +11,783 @@
  *= require_self
  *= require_tree .
  */
+* {padding:0; margin:0; border:0; -webkit-padding-start: 0px; -webkit-margin-before: 0px;} 
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#page {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header#head {
+	width: 100%;
+	height: 62px;
+	margin: 0 auto;
+	background: white;
+	display: block;
+	position: relative;
+	z-index: 999;
+}
+
+header#head .head-inner {
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+header#head .head-outer {
+	max-width: 980px;
+	height: 100%;
+	margin: 0 auto; 
+}
+
+hgroup#logohead {
+	height: 48px;
+	float: left;
+	position: relative;
+	left: 4px;
+	margin: 0.47em 0;
+}
+
+hgroup#logohead h1 {
+	font-size: 1em;
+	margin: 0 0;
+	position: relative;
+}
+
+hgroup#optionshead {
+	height: 48px;
+	float: right;
+	position: relative;
+	right: 4px;
+	margin: 0.47em 0;
+}
+
+#site-title a {
+	display: block;
+	/* text-indent: -9999px; */
+	height: 48px;
+	width: 96px;
+	background: no-repeat 0 0 url('#');
+}
+
+#site-title a:hover {
+	background: no-repeat 0 0 url('#');
+}
+
+nav#access {
+	/*display: inline-block;
+	max-height: 50px;
+	max-width: 980px;
+	position:relative;
+    left:-50%;*/
+    float: right;
+	text-align: left;
+	position:relative;
+    left:-50%;
+}
+
+ul#menu-primary-nav {
+	/*line-height:1em;*/
+	/*font-size:0px;*/
+	/*padding: 0;*/
+	list-style:none;
+    position:relative;
+    left:50%;
+}
+
+ul#menu-primary-nav li {
+	zoom: 1;
+	padding: 0;
+	background:url('#') no-repeat 0px 10px; 
+	float: left;
+	position:relative;
+}
+
+ul#menu-primary-nav li:first-child {
+	background: transparent;
+	float: left;
+	position:relative;
+}
+
+ul#menu-community-nav li:first-child a {
+	margin:0 13px 0 0;
+
+}
+
+ul#menu-primary-nav li a {
+	font-size: 12px;
+	/*height: 14px;*/
+	display: block;
+	/* color: #5d5c5c; */
+	color: black;
+	/* font-weight: 600; */
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 32px 15px 5px 15px; 
+	letter-spacing: 1px;
+}
+
+ul#menu-primary-nav li a:hover {
+	background:#f0f0f0;
+	color: #5d5c5c;	
+}
+
+ul#menu-primary-nav li.current-menu-item+li,
+ul#menu-primary-nav li:hover+li
+   {
+	background:transparent;	
+}
+
+ul#menu-primary-nav li ul {
+	display: none;
+	padding: 0;
+	/*width: 145px;*/
+	list-style-type: none;
+}
+
+ul#menu-primary-nav li ul#vehicle-repair, ul#menu-primary-nav li ul#vehicle-sales,
+ul#menu-primary-nav li ul#specialty {
+	width: 180px;
+}
+
+ul#menu-primary-nav li ul#advice {
+	width: 145px;
+}
+
+ul#menu-primary-nav li:hover ul {
+	display: block;
+	position: absolute;
+}
+
+ul#menu-primary-nav li:hover li {
+	float: none;
+	font-size: 8px;
+}
+
+ul#menu-primary-nav li:hover a {
+	/*background: #f0f0f0;*/
+}
+
+ul#menu-primary-nav li:hover li a:hover {
+	background: #f0f0f0;
+}
+
+ul#menu-primary-nav li ul li {
+	width: 100%;
+}
+
+ul#menu-primary-nav li ul li a {
+	padding: 12px 15px 5px 15px; 
+}
+
+#home-intro {
+	height: 463px;
+	max-height: 463px;
+	width: 100%;
+	padding: 75px 0 79px;
+	background-size: cover;
+}
+
+#contact-intro {
+	height: 463px;
+	max-height: 463px;
+	width: 100%;
+	padding: 40px 0 114px;
+	background-size: cover;
+}
+
+#work-intro {
+	height: 463px;
+	max-height: 463px;
+	width: 100%;
+	padding: 40px 0 114px;
+	background-size: cover;
+}
+
+.home-intro-content {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#home-frames {
+	width: 99.3%;
+	max-width: 950px;
+	padding: 0 0.35%;
+	z-index: 1;
+}
+
+#home-dialog-frame {
+	height: 300px;
+	width: 100%;
+	max-width: 660px;
+	padding: 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(95, 34, 39, 0.9);
+	opacity: 10%;
+}
+
+#about-dialog-frame {
+	width: 100%;
+	max-width: 610px;
+	padding: 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(12, 79, 38, 0.9);
+	opacity: 10%;
+}
+
+#contact-dialog-frame {
+	height: 440px;
+	width: 100%;
+	max-width: 660px;
+	padding: 30px 50px 30px 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(95, 34, 39, 0.9);
+	opacity: 10%;
+}
+
+#ibm-dialog-frame {
+	width: 100%;
+	max-width: 660px;
+	padding: 30px 50px 30px 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(50, 94, 166, 0.9);
+	opacity: 10%;
+}
+
+#glooko-dialog-frame {
+	width: 100%;
+	max-width: 660px;
+	padding: 30px 50px 30px 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(12, 79, 38, 0.9);
+	opacity: 10%;
+}
+
+#xl-dialog-frame {
+	width: 100%;
+	max-width: 660px;
+	padding: 30px 50px 30px 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(10, 54, 93, 0.93);
+	opacity: 10%;
+}
+
+#portfolio-dialog-frame {
+	height: 200px;
+	width: 100%;
+	max-width: 610px;
+	padding: 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(62, 107, 242, 0.9);
+	opacity: 10%;
+}
+
+#construction-dialog-frame {
+	height: 200px;
+	width: 100%;
+	max-width: 610px;
+	padding: 50px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 10px;
+	border-width: 20px;
+	margin: 0 auto;
+	background-color: rgba(208, 142, 38, 0.9);
+	opacity: 10%;
+}
+
+.home-dialog-content#heading {
+	font-family: "Arial Black";
+	font-size: 60px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.home-dialog-content#subhead {
+	font-family: "Verdana";
+	font-size: 16px;
+	color: white;
+	letter-spacing: 1px;
+	word-spacing: 20px;
+	width: 100%;
+}
+
+.about-dialog-content#heading {
+	font-family: "Arial Black";
+	font-size: 40px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.about-dialog-content#content {
+	font-family: "Verdana";
+	font-size: 13px;
+	color: white;
+	letter-spacing: 0px;
+	line-height: 22px;
+	padding-top: 10px;
+}
+
+.construction-dialog-content#heading {
+	font-family: "Arial Black";
+	font-size: 40px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.construction-dialog-content#subhead {
+	font-family: "Verdana";
+	font-size: 14px;
+	color: white;
+	letter-spacing: 0px;
+}
+
+.contact-dialog-content#heading {
+	font-family: "Arial Black";
+	font-size: 40px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.contact-dialog-content#subhead {
+	font-family: "Verdana";
+	font-size: 14px;
+	color: white;
+	letter-spacing: 0px;
+}
+
+.work-dialog-content#heading {
+	font-family: "Arial Black";
+	font-size: 40px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.work-dialog-content#subhead {
+	font-family: "Verdana";
+	color: white;
+	letter-spacing: 0px;
+}
+
+.work-dialog-content#responsibilities {
+	font-family: "Verdana";
+	font-size: 14px;
+	color: white;
+	letter-spacing: 0px;
+	padding-top: 25px;
+}
+
+.work-dialog-content#responsibilities ul {
+	list-style-type: square;
+}
+
+.work-dialog-content#responsibilities ul li {
+	padding-bottom: 5px;
+}
+
+nav#social-access {
+	width: 300px;
+	height: 170px;
+	float: right;
+	display: block;
+	padding: 10px;
+}
+
+nav#social-access .social-media-list-container {
+	width: 100%;
+	height: 100%;
+	float: right;	
+}
+
+nav#social-access .social-media-list-container#social-media-list {
+	height: 100%;
+	position: relative;
+}
+
+ul#social-media-list {
+	height: 55px;
+	float: right;
+	background: transparent;
+	margin: 0;
+	padding-top: 120px;
+}
+
+ul#social-media-list li {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	zoom: 1;
+	overflow: hidden;
+}
+
+ul#social-media-list li a {
+	font-size: 11px;
+	height: 50px;
+	width: 50px;
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-indent: -9999px;
+	letter-spacing: 1px;
+}
+
+#job-location {
+	float: left;
+	font-size: 14px;
+}
+
+#job-title {
+	float: left;
+	font-size: 16px;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+#duration {
+	float: right;
+	font-size: 14px;
+}
+
+ul#social-media-list li#media-item-fb {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-fb:hover {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-linkedin {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-linkedin:hover {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-twitter {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-twitter:hover {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-github {
+	 background-image: url('#');
+}
+
+ul#social-media-list li#media-item-github:hover {
+	 background-image: url('#');
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
