@@ -1,3 +1,64 @@
 // Place all the styles related to the Main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.main-nav-menu-container {
+  float: right;
+  text-align: left;
+  position: relative;
+  left: -50%;
+  min-width: 980px;
+  max-width: 980px;
+}
+
+ul#menu-main-nav {
+  list-style:none;
+  position:relative;
+  left:50%;
+}
+
+ul#menu-main-nav li {
+  zoom: 1;
+  padding: 0;
+  background:url('#') no-repeat 0px 10px; 
+  float: left;
+  position:relative;
+  min-width:226px;
+  max-width:226px;
+  padding-right:100px;
+  z-index: 99;
+}
+
+ul#menu-main-nav li ul li a.specialty {
+  min-width:326px;
+  max-width:326px;
+  padding-right:0px;
+}
+
+ul#menu-main-nav li:first-child {
+  background: transparent;
+  float: left;
+  position:relative;
+}
+
+ul#menu-main-nav li a {
+  font-size: 12px;
+  display: block;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 15px 5px 15px; 
+  letter-spacing: 1px;
+}
+
+ul#menu-main-nav li ul {
+  /*display: none;*/
+  padding: 0;
+  /*width: 145px;*/
+  list-style-type: none;
+  display: block;
+  position: absolute;
+}
+
+ul#menu-main-nav li ul li a {
+  padding: 12px 15px 5px 15px; 
+}
