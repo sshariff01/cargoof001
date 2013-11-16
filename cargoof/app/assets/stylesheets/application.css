@@ -106,7 +106,7 @@ textarea {
 
 header#head {
 	width: 100%;
-	height: 62px;
+	/*height: 62px;*/
 	margin: 0 auto;
 	background: white;
 	display: block;
@@ -115,12 +115,14 @@ header#head {
 }
 
 header#head .head-inner {
-	width: 980px;
+	min-width: 980px;
+	max-width: 980px;
 	height: 100%;
 	margin: 0 auto;
 }
 
 header#head .head-outer {
+	min-width: 980px;
 	max-width: 980px;
 	height: 100%;
 	margin: 0 auto; 
@@ -130,6 +132,21 @@ header#head .settings-bar {
   	max-width: 980px;
 	margin: 0.25em auto 0 auto; 
 
+}
+
+footer#foot {
+	width: 100%;
+	z-index: 999;
+	padding-top: 30px;
+	bottom: 1em;
+	width: 100%;
+	/*height: 60px;*/
+}
+
+footer#foot .footer-settings {
+	min-width: 980px;
+	max-width: 980px;
+	margin: 0 auto;
 }
 
 .settings-bar table tr td#browse-cats {
@@ -303,12 +320,67 @@ hgroup#optionshead {
 	background: no-repeat 0 0 url('#');
 }
 
-nav#access {
-	/*display: inline-block;
-	max-height: 50px;
+div.footer-container {
+	border-top: 1px solid #000000;
+	width: 100%
+}
+
+.footer-settings {
+	float: right;
+	text-align: left;
+	position: relative;
+	left: -50%;
+	min-width: 980px;
 	max-width: 980px;
+}
+
+ul#footer-nav {
+	list-style:none;
+    position:relative;
+    left:50%;
+}
+
+ul#footer-nav li {
+	zoom: 1;
+	padding: 0;
+	background:url('#') no-repeat 0px 10px; 
+	float: left;
 	position:relative;
-    left:-50%;*/
+	min-width:245px;
+	max-width:245px;
+}
+
+ul#footer-nav li:first-child {
+	background: transparent;
+	float: left;
+	position:relative;
+}
+
+ul#footer-nav li a {
+	font-size: 12px;
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 25px 15px 5px 15px; 
+	letter-spacing: 1px;
+}
+
+ul#footer-nav li ul {
+	/*display: none;*/
+	padding: 0;
+	/*width: 145px;*/
+	list-style-type: none;
+	display: block;
+	position: absolute;
+}
+
+ul#footer-nav li ul li a {
+	padding: 12px 15px 5px 15px; 
+}
+
+nav#access {
+	max-height: 50px;
     float: right;
 	text-align: left;
 	position:relative;
@@ -318,9 +390,6 @@ nav#access {
 }
 
 ul#menu-primary-nav {
-	/*line-height:1em;*/
-	/*font-size:0px;*/
-	/*padding: 0;*/
 	list-style:none;
     position:relative;
     left:50%;
@@ -340,18 +409,11 @@ ul#menu-primary-nav li:first-child {
 	position:relative;
 }
 
-ul#menu-community-nav li:first-child a {
-	margin:0 13px 0 0;
-
-}
 
 ul#menu-primary-nav li a {
 	font-size: 12px;
-	/*height: 14px;*/
 	display: block;
-	/* color: #5d5c5c; */
 	color: black;
-	/* font-weight: 600; */
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 25px 15px 5px 15px; 
