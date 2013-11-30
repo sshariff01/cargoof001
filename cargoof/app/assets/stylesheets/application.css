@@ -805,7 +805,11 @@ ul#social-media-list li#media-item-github:hover {
 	 background-image: url('#');
 }
 
-
+.devise {
+	min-width: 980px;
+	max-width: 980px;
+	margin: 0 auto;
+}
 
 
 
